@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "noeconflicts",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "No Enchantment Conflicts",
+  "description": "Removes the enchantment conflicts from weapons and armour.",
   "authors": [
     "Me!"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/AlexBurneikis/No-Enchantment-Conflicts"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/noeconflicts/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.msponge.noeconflicts.NoEnchantmentConflicts"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "noeconflicts.mixins.json"
   ],
 
   "depends": {

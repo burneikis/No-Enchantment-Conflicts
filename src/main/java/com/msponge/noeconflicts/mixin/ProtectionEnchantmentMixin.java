@@ -1,4 +1,4 @@
-package net.fabricmc.example.mixin;
+package com.msponge.noeconflicts.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import net.minecraft.enchantment.ProtectionEnchantment;
