@@ -1,4 +1,8 @@
-# Fabric Example Mod
+# No Enchantment Conflicts
+This mod removes the conflicts between:
+- Infinity and Mending
+- Protection, Projectile Protection, Fire Protection and Blast Protection
+- Sharpness, Smite and Bane of Arthropods
 
 ## Setup
 
