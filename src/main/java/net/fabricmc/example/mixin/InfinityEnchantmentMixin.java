@@ -10,7 +10,7 @@ import net.minecraft.enchantment.Enchantment;
 @Mixin(InfinityEnchantment.class)
 public class InfinityEnchantmentMixin {
     @Inject(method = "canAccept", at = @At("HEAD"), cancellable = true)
-    public void canCombine(Enchantment other, CallbackInfoReturnable<Boolean> cir) {
+    public void canAccept(Enchantment other, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
     }
 }

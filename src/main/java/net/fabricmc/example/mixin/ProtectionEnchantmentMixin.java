@@ -10,7 +10,7 @@ import net.minecraft.enchantment.Enchantment;
 @Mixin(ProtectionEnchantment.class)
 public class ProtectionEnchantmentMixin {
     @Inject(method = "canAccept", at = @At("HEAD"), cancellable = true)
-    public void canCombine(Enchantment other, CallbackInfoReturnable<Boolean> cir) {
+    public void canAccept(Enchantment other, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
     }
 }
