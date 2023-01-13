@@ -4,8 +4,9 @@ This mod removes the conflicts between:
 - Protection, Projectile Protection, Fire Protection and Blast Protection
 - Sharpness, Smite and Bane of Arthropods
 
-**This mod works entirely serverside**
-You don't need to install it on the client (except for singleplayer obv).
+This is a server-side only mod (works with unmodded clients!) 
+
+***Note:*** *Although this is a server-side mod, it can still be used in single player on clients*
 
 ## Setup
 
