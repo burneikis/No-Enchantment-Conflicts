@@ -13,7 +13,7 @@
     "sources": "https://github.com/AlexBurneikis/No-Enchantment-Conflicts"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/noeconflicts/icon.png",
 
   "environment": "*",
