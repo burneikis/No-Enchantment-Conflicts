@@ -6,6 +6,8 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 
+import com.msponge.noeconflicts.config.Config;
+
 @Mixin(ProtectionEnchantment.class)
 public class ProtectionEnchantmentMixin extends Enchantment{
     public ProtectionEnchantmentMixin(Rarity weight, EquipmentSlot... slotTypes) {
@@ -14,6 +16,11 @@ public class ProtectionEnchantmentMixin extends Enchantment{
 
     @Override
     public boolean canAccept(Enchantment other) {
+        if (!Config.INSTANCE.ProtectionEnchantments) {
+            if (other instanceof ProtectionEnchantment) {
+                return false;
+            }
+        }
         return super.canAccept(other);
     }
 }

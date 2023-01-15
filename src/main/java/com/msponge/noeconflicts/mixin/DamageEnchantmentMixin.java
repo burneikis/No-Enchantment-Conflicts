@@ -6,6 +6,8 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 
+import com.msponge.noeconflicts.config.Config;
+
 @Mixin(DamageEnchantment.class)
 public class DamageEnchantmentMixin extends Enchantment{
     public DamageEnchantmentMixin(Rarity weight, EquipmentSlot... slotTypes) {
@@ -14,6 +16,11 @@ public class DamageEnchantmentMixin extends Enchantment{
 
     @Override
     public boolean canAccept(Enchantment other) {
+        if (!Config.INSTANCE.DamageEnchantments) {
+            if (other instanceof DamageEnchantment) {
+                return false;
+            }
+        }
         return super.canAccept(other);
     }
 }
