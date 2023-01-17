@@ -6,7 +6,9 @@
   "mixins": [
     "DamageEnchantmentMixin",
     "ProtectionEnchantmentMixin",
-    "InfinityEnchantmentMixin"
+    "InfinityEnchantmentMixin",
+    "MultishotEnchantmentMixin",
+    "PiercingEnchantmentMixin"
   ],
   "injectors": {
     "defaultRequire": 1

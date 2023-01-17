@@ -20,6 +20,7 @@ public class Config{
     public boolean DamageEnchantments = true;
     public boolean ProtectionEnchantments = true;
     public boolean InfinityEnchantment = true;
+    public boolean PiercingEnchantment = true;
     public transient Level log;
 
     public static void loadConfig(){

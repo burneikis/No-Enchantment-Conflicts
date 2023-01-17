@@ -11,7 +11,7 @@ public class NoEnchantmentConflicts implements ModInitializer {
 
 	public static final String MOD_ID = "noeconflicts";
     public static final String MOD_NAME = "NoEnchantmentConflicts";
-    public static final String MOD_VER = "1.3.0";
+    public static final String MOD_VER = "1.4.1";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
