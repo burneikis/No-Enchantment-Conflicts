@@ -1,27 +1,38 @@
 {
-    "schemaVersion": 1,
-    "id": "infinityfix",
-    "name": "Infinity Fix",
-    "description": "Fixes the Infinity Enchant and also makes it work together with Mending",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Radient_Sora",
-            "contact": {
-                "homepage": "https://twitter.com/Radient_Sora"
-            }
-        },
-        {
-            "name": "UpcraftLP",
-            "contact": {
-                "homepage": "https://twitter.com/UpcraftLP"
-            }
-        }
-    ],
-    "icon": "assets/infinityfix/icon.png",
-    "side": "universal",
-    "version": "${version}",
-    "mixins": [
-        "mixins.infinityfix.common.json"
+  "schemaVersion": 1,
+  "id": "noeconflicts",
+  "version": "${version}",
+
+  "name": "No Enchantment Conflicts",
+  "description": "Removes the enchantment conflicts from weapons and armour.",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/no-enchantment-conflicts",
+    "sources": "https://github.com/AlexBurneikis/No-Enchantment-Conflicts"
+  },
+
+  "license": "MIT",
+  "icon": "assets/noeconflicts/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.msponge.noeconflicts.NoEnchantmentConflicts"
     ]
+  },
+  "mixins": [
+    "noeconflicts.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }
